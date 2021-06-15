@@ -1,0 +1,94 @@
+.box1{
+    margin: auto;
+    color: rgb(252, 70, 14);
+}
+.box2{
+    margin: auto;
+    color: cyan;
+}
+.juzhong{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    margin: auto;
+    background: rgb(212, 0, 255);
+    width: 90%
+}
+body {
+    background-image: url(https://z3.ax1x.com/2021/06/14/27wroF.jpg);
+  }
+  * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: auto;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+ul {
+    width: 88vw;/*调节导航词排布*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    padding: 6px 18px;
+    /* background-color: #3ce745; */
+    transition: background-color 0.8s;
+}
+
+a:hover {
+    background-color: #e74c3c;
+}
+
+a::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e74c3c;
+    border-width: 0 0 2px 2px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+a::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e74c3c;
+    border-width: 2px 2px 0 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+a:hover::before {
+    left: -12px;
+    bottom: -12px;
+    opacity: 1;
+}
+
+a:hover::after {
+    top: -12px;
+    right: -12px;
+    opacity: 1;
+}
